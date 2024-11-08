@@ -143,7 +143,7 @@ document.body.onload = function () {
 document.getElementById("startButton").onclick = function (e) {
 	//Make it so that the button can't be focused because this makes it start the animation and immediately cancel it to the reset position.
 	e.target.blur();
-	reset();
+	if (fly == false) reset();
 };
 
 document.onkeydown = function (e) {
